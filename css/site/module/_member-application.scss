@@ -1,0 +1,71 @@
+.member-application-base{
+    padding: 0;
+    .member-application-inner{
+        padding: 0;
+        margin: 100px 0;
+        .site-head{
+            line-height: 30px;
+            span{
+                font: 36px $font-regular;
+                color: #333333;
+                display: block;
+            }
+        }
+        .member-application-inner-lft{
+            padding: 0;
+            .member-application-price{
+                 ul{
+                     li{
+
+                        padding: 10px 25px;
+                        background-color: #ffffff;
+                        margin:0 15px;
+                        float: left;
+                        @include border-radius(5px);
+                        width: 43%;
+                        min-height: 103px;
+                        @include box-shadow-sep(0,2px,1px,16px,rgba(0, 0, 0, 0.34)); 
+
+                        h5{
+                            font: 18px $font-semibold;
+                            color: $themebg;
+                            margin: 0;
+                        }
+                        p{
+                            font: 13px $font-regular;
+                            color: $themebg;
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                     }
+                 }
+            }
+        }
+        .member-application-inner-rgt{
+            p{
+                font: 16px/26px $font-regular;
+                color: #000000;
+            }
+        }
+    }
+}
+.member-application-features{
+    margin-bottom: 35px;
+    p{
+        font: 18px $font-regular;
+        color: #000000;
+    }
+    ul{
+        margin:30px 0 0;
+        li{
+            font: 16px $font-regular;
+            color: #000000;
+            margin-bottom: 10px;
+            background: url(../images/star.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 45px;
+        }
+    }
+}

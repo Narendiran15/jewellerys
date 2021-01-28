@@ -1,0 +1,6 @@
+<?php $message .= '<p>Dear '.$company_name.':</p>
+<p><strong>Global Logistics Summit Network (GLSN) is pleased to confirm that your Membership Application has been accepted!</strong></p>
+<p>Please click the link below for our Membership/Summit Fee invoice that is in .pdf format.</p>
+<p style=\"text-align: center;\"><span style=\"font-size: 14pt;\"><strong><a title=\"Open Invoice #'.$invoice_no.'\" href=\"'.$invoice_url.'\" target=\"_blank\" rel=\"noopener\">Open Invoice #'.$invoice_no.'</a></strong></span></p>
+<p style=\"text-align: justify;\">The invoice contacins payment/wire transfer details for your easy reference.&nbsp;&nbsp; Kindly send a copy of your Wire Transfer Instructions so that we can ensure correct allocation.<br /><br />Upon payment GLSN will activate your Membership and grant you access to the Member Dashboard.</p>
+<p style=\"text-align: justify;\">The GLSN Management Team<br />e)&nbsp; <a href=\"mailto:info@4GLSN.com\">info@4GLSN.com</a> - w)&nbsp; <a href=\"http://www.4GLSN.com\">www.4GLSN.com</a><br /><br /></p>';  ?>

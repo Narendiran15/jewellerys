@@ -1,0 +1,95 @@
+.footer-base{
+    background: #222222;
+    padding: 65px 0;
+    .footer-inner{
+        .footer-section{
+            border-right: 1px solid #595959;
+            min-height: 342px;
+            h5{
+                font: 24px $font-regular;
+                color: #ffffff;
+            }
+            p{
+                font: 14px $font-regular;
+                color: #ffffff;
+            }
+            .sitemap-base{
+                ul{
+                    margin-top:20px;
+                    li{
+                        margin-bottom:10px;
+                        background: url(../images/arrow-icon.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        padding-left: 36px;
+                        a{
+                            font: 14px $font-regular;
+                            color: #ffffff;
+                            &:hover{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .location-foot-base{
+                padding-left: 65px;
+                ul{
+                    margin-top: 28px;
+                    
+                    li{
+                        margin-bottom: 28px;
+                        font: 15px $font-regular;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .newsletter-base{
+                padding-left: 65px;
+                @include placeholder{
+                    font: 14px $font-semibold;
+                    color: $themebg;
+                }
+                .newsletter-inner{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+.copyright-content-base{
+    margin-top:56px;
+    p{
+        font: 16px $font-regular;
+         color: #ffffff;
+    }
+}
+
+.foot-input{
+    background: #ffffff;
+    padding: 15px 10px;
+    border: none;
+    font: 15px $font-regular;
+    width: 90%;
+    @include border-radius(5px);
+}
+.footer-submit{
+    background: $themebg;
+    @include border-radius(5px);
+    border:none;
+    font: 18px $font-regular;
+    color: #ffffff;
+    margin-top: 10px;
+    padding:13px 47px;
+
+}
+.footlogo-base{
+    padding-left: 50px;
+    ul{
+        margin: 35px 0 0;
+        display: inline-block;
+    }
+}
+.contact-foot{
+    margin-top: 25px;
+}

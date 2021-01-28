@@ -1,0 +1,14 @@
+.upcoming-base{
+    table{
+        tr{
+            @include box-shadow-sep(0,2px,1px,7px,rgba(0, 0, 0, 0.1));
+        }
+        td{
+            padding: 21px 10px !important;
+        }
+        th{
+            padding:21px 10px !important;
+        }
+    }
+
+} 

@@ -1,0 +1,53 @@
+.port-estimate-base{
+    padding: 0;
+    margin-top: 60px;
+    .port-estimate-inner{
+        .grey-title{
+            margin:0;
+            line-height: 33px;
+                }
+        padding: 0;
+        .requester-info-inner{
+            padding: 0;
+            .application-input-container{
+                margin-bottom:20px;
+                ul{
+                    margin-top: 20px;
+                    li{
+                        width: 49%;
+                        margin-bottom: 30px;
+                        display: inline-block;
+                        .custom_check .control {
+                          font-size: 15px;
+                          padding-left: 27px;
+                        }
+                        .custom_check .control__indicator {
+                            position: absolute;
+                            top: 0px;
+                            left: 0;
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .submit-application-btn{
+            margin-top: 60px;
+        }
+    }
+    .other-req-base{
+        .form-title{
+            margin-bottom: 0;
+        }
+        .fill-text{
+            font: 18px $font-semibold;
+            text-transform: uppercase;
+            color:#082949;
+            text-align: center;
+            margin:50px 0;
+        }
+        
+    }
+}

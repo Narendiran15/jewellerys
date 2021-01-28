@@ -1,0 +1,7 @@
+<?php $message .= '<p style=\"text-align: justify;\">A sincere <strong>Thank You</strong> for your application to join Global Logistics Summit Network (GLSN) and <strong>Welcome on board!</strong></p>
+<p style=\"text-align: justify;\">We are pleased to acknowledge receipt of your membership fees and you are now a Member in good standing of our growing, quality-focused Network.</p>
+<p style=\"text-align: justify;\">Within the next few days we will be sending you a <strong>Membership Certificate</strong> for each of your offices.</p>
+<p style=\"text-align: justify;\">The following are some important notes that we recommend you retain and also share with your staff:<br /><br /><strong>ANNOUNCEMENTS:<br /></strong>We will send out an internal broadcast to all of our GLSN Members within the immediate future so please be prepared for many warm welcome messages!&nbsp; In addition, we use our periodic eNewsletter to advise GSAN Members of new events such as your joining our network.</p>
+<p style=\"text-align: justify;\">Again, we would like to welcome you on-board the GLSN. We believe you have joined the best network around but we are only as good as our Members. You only get out of the GLSN network what YOU are prepared to put into it!</p>
+<p style=\"text-align: justify;\">Regards,</p>
+<p style=\"text-align: justify;\">The GLSN Management Team</p>';  ?>

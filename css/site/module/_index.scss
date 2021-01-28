@@ -1,0 +1,266 @@
+.section-base{
+    padding:0;
+    .banner-base{
+        padding:0;
+        position: relative;
+        .banner-caption{
+           text-align: center;
+            top: 20%;
+            left: 0;
+         
+            position: absolute;
+            p{
+                font: 32px/45px $font-semibold;
+                color: #fff;
+                background: rgba(0,0,0,0.1);
+                padding: 50px;
+                width:80%; 
+                display: inline-block;
+                @include border-radius(40px);
+            }
+        }
+      
+    }
+
+    .banner-content{
+        position: absolute;
+            z-index: 1;
+            bottom: 0;
+        .banner-section{
+            padding: 0;
+
+            .banner-section-base{
+                background: #004d79;
+                padding: 13px;
+                @include border-radius(4px);
+                @include transition(all,0.5s,ease-in-out);
+                &:hover{
+                    background-color: #e72222;
+                    @include transform(scale(1.05));
+                    z-index: 1;
+                }
+                .banner-section-img {
+                    padding: 0; 
+                }
+                .banner-section-content{
+                    padding: 0;
+                    padding-bottom: 15px;
+                    h6{
+                        font: 18px $font-regular;
+                        color: #fff;;
+                    }
+                    p{
+                        font: 13px $font-regular; 
+                        color: #fff;
+                    }
+                    a{
+                        font: 14px $font-semibold;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        margin-top: 20px;
+
+                        color: #fff;
+                        &:hover{
+                            text-decoration: none;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .color-bg{
+                background: #35a6e8;
+            }
+        }
+    }
+} 
+
+.welcome-base{
+    .welcome-inner{
+        padding: 0;
+        .welcome-left{
+            padding-left: 0;
+            .common-header{
+                position: relative;
+                padding: 24px 15px 4px 30px;
+                .logo-icon{
+                    position:absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            h1{
+                font: 36px/48px $font-semibold;
+                color:#333333;
+            }
+            p{
+                font: 16px $font-regular;
+                color: #000000;
+            }
+            .welcome-content{
+                padding-left: 33px;
+                margin-top: 28px;
+            }
+        }
+        .welcome-rgt{
+            padding: 52px 20px;
+            .welcome-rgt-base{
+                background: $themebg;
+                padding: 0 15px 0px;
+
+                img{
+                    top: -18px;
+                    position: relative;
+                }
+            }
+        }
+    }
+    .apply-membership-btn{
+        margin: 30px 0;
+    }
+}
+
+.annual-summits-base{
+    margin:60px 0 140px;
+    .common-header{
+        display: inline-block;
+        .logo-icon{
+            float: left;
+        margin-left: -30px;
+        margin-top: -19px;
+        }
+    }
+    h2{
+        font: 36px $font-semibold;
+        color: #333333;
+        margin:0;
+    }
+    .threedslider-base{
+        margin-top: 60px;
+    }
+
+}
+
+.feature-member-base {
+    background-color: #004d79;
+    padding: 100px 0;
+    h2{
+        font: 36px $font-semibold;
+        color: #fff;
+        margin: 0;
+    }
+    .common-header{
+        display: inline-block;
+        margin: 20px 0;
+        
+        .logo-icon{
+            float: left;
+            margin-top: -23px;
+            margin-left: -31px;
+        }
+    }
+}
+
+
+.our_guru_base{
+    text-align: center;
+    padding-top: 20px;
+    h3{
+        font: 24px $font-semibold;
+        color: #004d79;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    h4{
+            font: 16px $font-semibold;
+            color: #333333;
+            margin-top: 0;
+    }
+    
+    .our_guru_inner{
+        .gure_top_base{
+            position: relative;
+            background: #F8F7FA;
+            margin: 100px 5px;
+            padding: 20px;
+            @include box-shadow(0px,2px,71px,rgba(0,0,0,0.14));
+            @include border-radius(10px);
+        .guru_image_base{
+            text-align: center;
+            width: 100%;
+            top:-30px;
+                .profile_pic_guru{
+                    width: 98px;
+                    height: 50px;
+                    display: inline-block;
+                    img{
+                        max-width: 100%;
+                        display: inline-block;
+                        
+                        border:5px solid #fff;
+                    }
+                }
+        }
+        .guru_review_desc_base{
+            p{
+                font: 14px $font-regular;
+                color: #666666;
+            }
+        }
+    }
+    .guru_review_base{
+        text-align: center;
+        .reviews{
+            display: inline-block;
+        }
+    }
+    .top_guru {
+        .active.center{
+            z-index: 8;
+            .gure_top_base{
+                z-index: 2;
+               @include scale(1.15) ;
+                
+            }
+        }
+        .owl-dots.disabled{
+            display: inline-block;
+        }
+        .owl-nav{
+            button{
+                &:hover{
+                    background: transparent;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+           
+        }
+        .owl-dots{
+            position: absolute;
+                top: 0;
+                width: 100%;
+                left: 0;
+                button{
+                    span{
+                        background: transparent;
+                        border: 5px solid #c2c2c2;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+                button.active{
+                    span{
+                        border-color: $themebg;
+                    }
+                }
+        }
+    }
+    }
+}

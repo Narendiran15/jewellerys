@@ -1,0 +1,169 @@
+.navbar-brand{
+    display: none;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .menu-base .navbar-default .navbar-nav > li > a {
+       
+        padding: 32px 10px;
+       
+    }
+}
+@media only screen and (min-width: 1233px) and (max-width: 1400px) {
+    .membership-base {
+        padding: 30px 0;
+    }
+    .menu-base .navbar-default .navbar-nav > li > a {
+        padding: 32px 9px;
+    }
+}
+@media only screen and (max-width:1232px) {
+    .membership-base {
+        padding: 0;
+    }
+    .site-head {
+       font-size: 28px;
+    }
+    .menu-base .navbar-default .navbar-nav > li > a {
+        padding: 34px 5px;
+      font-size: 11px;
+    }
+}
+@media only screen and (max-width:1023px) {
+    
+    .membership-nav a {
+        display: none;
+     }
+     .membership-nav ul li:after {
+         display: none;
+     }
+     .site-head {
+         font-size: 22px;
+    }
+    .office-list-inner ul li h4 {
+        font-size: 17px;
+    }
+    .themebtn {
+        font-size: 14px;
+    }
+    .backbtn {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+}
+    
+@media only screen and (min-width: 992px) and (max-width:1180px) {
+    .membership-nav a {
+       display: none;
+    }
+    .membership-nav ul li:after {
+        display: none;
+    }
+    .menu-base .navbar-default .navbar-nav > li > a {
+        padding: 34px 5px;
+      font-size: 11px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .membership-cotent-base {
+        margin-top: 0;
+    }
+    .membership-base {
+        padding: 15px 0;
+     
+    }
+    .container {
+        width: 100%;
+    }
+    .menu-base .navbar-default .navbar-nav > li > a {
+        color: #004d79;
+        display: inline-block;
+        padding: 34px 4px;
+      font-size: 13px;
+        text-transform: capitalize;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+    .menu-base .navbar-default .navbar-nav > li > a {
+        padding: 34px 0px;
+      font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .membership-cotent-base {
+        margin-top: 0;
+        
+    }
+    #branchinfo_btn{
+        float: left;
+    }
+    .membership-base {
+        padding: 15px 0;
+    }
+    .site-head {
+        font-size: 14px;
+    }
+    .membership-input-base {
+        padding: 0;
+        margin-top: 0;
+    }
+    .app_input_base .app_input_common {
+        margin-bottom: 15px;
+    }
+    .member-application-inner-rgt{
+        margin-top: 20px;
+    }
+    .member-application-base .member-application-inner .member-application-inner-lft {
+        padding: 0 12px;
+    }
+    .contact-page-base .contact-page-content .contact-page-content-inner .address-para b {
+        width: 100%;
+    }
+    .contact-page-base .contact-page-content .contact-page-content-inner p {
+        word-break: break-word;
+    }
+    .dashboard-base .dashboard-details-rgt {
+        text-align: left;
+    }
+    .upload-container .upload-container-content {
+        float: left;
+        margin-top: 0;
+        margin-left: 0;
+        margin-top: 17px;
+        width: 100%;
+    }
+    .photo_inner_li {
+        width: 54%;
+    }
+    
+.padd-right {
+    padding: 0 !important;
+}
+.news-gsln-new{
+    padding: 0;
+    .submit-news-inner{
+         padding: 0;
+    }
+}
+.banner-innerpage .banner-innercaption h2 {
+   font-size: 18px;
+    color: #fff;
+    margin-bottom: 0px;
+    margin: 0;
+    padding: 0 10px;
+}
+.banner-innerpage .banner-innercaption span {
+    display: none;
+}
+.logo{
+    display: none;
+}
+.navbar-brand{
+    display: inline-block;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+   
+}

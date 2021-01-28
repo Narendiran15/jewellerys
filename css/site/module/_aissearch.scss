@@ -1,0 +1,80 @@
+.searchais-base{
+     padding: 0;
+     margin-top: 60px;
+     .searchais-inner{
+         background:#DFE6EB;
+         margin-top: 50px;
+         padding:30px 60px;
+         text-align: center;
+         @include border-radius(7px); 
+         h5{
+             font: 24px $font-bold;
+             color: $themebg;
+             text-align: left;
+         }
+         .searchais-content{
+              float: none;
+              display: inline-block;
+              .searchais-content-tab{
+                  .nav-tabs{
+                      border: none;
+                      li{
+                          margin:0 15px;
+                          &:first-child{
+                              margin-left: 0;
+                          }
+                          a{
+                              font: 24px $font-regular;
+                              padding: 10px 60px;
+                                color: #082949;
+                                @include border-radius(20px);
+                                border: none;
+                                background: #fff;
+                          }
+                      }
+                      li.active{
+                        a{
+                            font-family: $font-bold;
+                        }
+                      }
+                  }
+                  .searchais-content-inner{
+                      background: #fff;
+                      @include border-radius(40px);
+                      padding: 49px 15px;
+                      margin-top: 25px;
+                      .input-container{
+                          margin:0 0 25px 0;
+                          
+                      }
+                  }
+                  .show-btn{
+                      margin-top: 30px;
+                      .submit-btn{
+                          text-transform: uppercase;
+                          font-size: 20px;
+                      }
+                  }
+                  .input-control{
+                      @include border-radius(10px);
+                  }
+                  .left-input{
+                    padding-left: 0;
+                    .input-control{
+                        @include  border-radius-seprate(20px,5px,5px,20px) ;
+                    }
+                }
+                .right-input{
+                    padding-right: 0;
+                    .select-control {
+                        @include  border-radius-seprate(5px,20px,20px,5px) ;
+                    }
+                }
+                  .select-control {
+                  
+                    background-position: 90% center;
+                  }
+              }
+         }
+     }
+}

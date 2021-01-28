@@ -1,0 +1,325 @@
+.error{
+	color:red;
+	display: block;
+}
+#ports_list_container{
+	display:none;
+}
+#photo_div_hide{
+	display:none;
+}
+.checked_tick{
+	width:25px;
+}
+.image_div_show{
+	display:block !important;
+}
+.sivspin{
+	width:50px;
+	text-align:center;
+	margin:0 auto;
+}
+#logo_img{
+	max-width:150px;
+}
+span.captcha_reload_icon {
+    padding: 5px;
+    position: absolute;
+}
+span.captcha_reload_icon svg {
+    width: 35px;
+    height: 35px;
+	-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+    /* margin-top: 21px; */
+}
+.captcha_reload_icon{
+	-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+div#recaptcha {
+    display: inline-block;
+}
+#others_hide
+{
+	display:none;
+}
+#ref_hide
+{
+	display:none;
+}
+.margin-10{
+	margin-top:10px;
+}
+.rotated {
+  transform: rotate(360deg) !important;
+  -webkit-transform:rotate(360deg) !important;
+  -moz-transform:rotate(360deg)!important;
+  
+}
+.whatsappbase h5 {
+    margin-top: 25px;
+}
+.section-base .banner-base .banner-caption p {
+    font: 25px/45px PoppinsSemiBold;
+    padding: 28px;
+    width: 80%;
+ }
+ .section-base .banner-base .banner-caption {
+    top: 17%;
+  }
+  a.ahover_email {
+    color: #fff;
+}
+.guru_name_base {
+    min-height: 116px;
+}
+.guru_review_desc_base{
+    min-height: 284px;
+}
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+	
+}
+@media only screen and (min-width: 1233px) and (max-width: 1400px) {
+	
+}
+@media only screen and (max-width:1232px) {
+	.section-base .banner-content .banner-section .banner-section-base .banner-section-content p {
+   
+    min-height: 62px;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content h6 {
+   
+    min-height: 55px;
+}
+}
+@media only screen and (max-width:1023px) {
+	.section-base .banner-content {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width:1180px) {
+	.section-base .banner-content {
+    position: relative;
+}
+.menu-base .navbar-default .navbar-nav > li > a {
+    padding: 35px 5px;
+    
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.section-base .banner-content .banner-section .banner-section-base .banner-section-content a {
+    font: 10px PoppinsSemiBold;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content h6 {
+    font: 12px PoppinsRegular;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content p {
+    font: 13px PoppinsRegular;
+    color: #fff;
+}
+.welcome-base .welcome-inner .welcome-left h1 {
+    font: 26px/33px PoppinsSemiBold;
+    color: #333333;
+}
+.annual-summits-base h2 {
+    font: 25px PoppinsSemiBold;
+}
+.menu-base .navbar-default .navbar-nav > li > a {
+    font-size: 9px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+	.section-base .banner-content .banner-section {
+    width: 50%;
+    margin-bottom: 6px;
+    margin-right: 0px;
+    padding: 8px;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 767px) {
+		.section-base .banner-content .banner-section {
+    width: 100%; 
+	    margin-bottom: 6px;
+    margin-right: 0px;
+    padding: 8px;
+    text-align: center;
+}
+	.section-base .banner-base .banner-caption p {
+    font: 15px/28px PoppinsSemiBold;
+    padding: 28px;
+    width: 80%;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content h6 {
+    min-height: auto;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content p {
+    min-height: auto;
+}
+.welcome-base .welcome-inner .welcome-left h1 {
+    font: 19px/25px PoppinsSemiBold;
+}
+.annual-summits-base h2 {
+    font: 20px PoppinsSemiBold;
+}
+.feature-member-base h2 {
+    font: 18px PoppinsSemiBold;
+}
+.our_guru_base h3 {
+    font: 14px PoppinsSemiBold;
+}
+.our_guru_base h4 {
+    font: 13px PoppinsSemiBold;
+}
+.footer-base .footer-inner .footer-section .newsletter-base {
+    padding-left: 15px;
+}
+.foot-input {
+    margin-bottom: 8px;
+}
+.footer-base .footer-inner .footer-section h5 {
+    font: 20px PoppinsRegular;
+    margin: 0;
+}
+.footer-base .footer-inner .footer-section {
+    min-height: auto;
+}
+.copyright-content-base p {
+    font: 14px PoppinsRegular;
+    text-align: left;
+}
+.footlogo-base {
+    padding-left: 0;
+}
+.welcome-base .welcome-inner .welcome-left .welcome-content {
+    padding-left: 0px;
+    margin-top: 10px;
+}
+.menu-base .navbar-default .navbar-nav > li > a {
+    padding: 8px 5px;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+	.section-base .banner-content .banner-section {
+    width: 100%; 
+	    margin-bottom: 6px;
+    margin-right: 0px;
+    padding: 8px;
+    text-align: center;
+}
+.section-base .banner-base .banner-caption p {
+    font: 12px/20px PoppinsSemiBold;
+    padding: 17px;
+    width: 80%;
+}
+.welcome-base .welcome-inner .welcome-left h1 {
+    font: 14px/25px PoppinsSemiBold;
+}
+}
+
+.member-directory-profile .member-directory-profile-inner p {
+    text-align: justify;
+}
+button.btn.dropdown-toggle.btn-default {
+    padding: 10px;
+    font: 14px PoppinsRegular;
+    color: #000000;
+    border: 1px solid #999999;
+}
+.btn-group.bootstrap-select.select-control1 {
+    width: 100% !important;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+   background-color: #004d79;
+    border-color: #004d79;
+}
+.banner-innerpage img{
+	width:100%;
+}
+.banner-caption {
+    width: 100%;
+    text-align: center;
+}
+.our_guru_base .our_guru_inner .gure_top_base .guru_image_base .profile_pic_guru {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    height: 200px;
+	background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+.menu-base .navbar-default .navbar-nav > li > a {
+    padding: 33px 10px;
+    font: 14px PoppinsSemiBold;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1233px){
+.menu-base .navbar-default .navbar-nav > li > a {
+    padding: 33px 7px;
+    font: 14px PoppinsSemiBold;
+}
+.section-base .banner-base .banner-caption {    top: 2%;
+}
+}
+
+ .summit-slider .active.center .gure_top_base {
+    z-index: 2;
+ 
+	
+	transform: perspective(500px) translate3d(10px, 0, 55px);
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+ .summit-slider .gure_top_base {
+	 transform: perspective(500px) translate3d(0px, 0, -321px); 
+	 -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.section-base .banner-content .banner-section .banner-section-base .banner-section-content {
+    min-height: 160px;
+}
+#user_account_create_form_edit{
+	display:none;
+}
+#changepassword .contact_text {
+    padding: 15px;
+}
+.user-create-table .btn{
+	display:inline-block;
+	margin:0 5px;
+}
+.create-contact-form{
+	padding:0;
+}
+.change-code-base .sub-head{
+	text-align:left;
+}
+.cust-margin{
+	margin-top: 7px;
+}
+.reference-class-mail{
+	margin:40px 0;
+}
+.span-reference{
+	font-size: 26px;
+    font-weight: 700;
+}

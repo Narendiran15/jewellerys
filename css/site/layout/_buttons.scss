@@ -1,0 +1,180 @@
+
+// custom check box
+.custom_check
+{
+  margin-bottom:0px;
+.control {
+  display: block;
+  position: relative;
+  padding-left:34px;
+  font: 16px $font-semibold;
+  color: #000;
+  cursor: pointer;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top:0px;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  border: 1px solid #ccc;
+  background: #fff;
+  @include border-radius(5px);
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #fff;
+}
+.control input:checked ~ .control__indicator {
+  background: #fff;
+
+}
+/*.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}*/
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+     left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 11px;
+    border: solid $themebg;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: $themebg;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+}
+
+
+// custom radio
+
+.custom_radio
+{
+  margin: 15px 0 0;
+.control {
+  display: block;
+  position: relative;
+  padding-left: 37px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font: 19px $font-bold;
+  color: $themebg;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 1px;
+  left: 0;
+      height: 26px;
+    width: 26px;
+  border: 1px solid #ccc;
+  background:#fff;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #fff;
+}
+.control input:checked ~ .control__indicator {
+  background: #fff;
+}
+/*.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}*/
+.control input:disabled ~ .control__indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--checkbox .control__indicator:after {
+     left: 6px;
+    top: 1px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 10px;
+  width: 10px;
+    border-radius: 50%;
+    background: $themebg;
+}
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+}
+
+.themebtn{
+  background: $themebg;
+  font: 18px $font-semibold;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  display: inline-block;
+  @include border-radius(5px);
+
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  &:focus{
+    color: #fff;
+    text-decoration: none;
+  }
+}

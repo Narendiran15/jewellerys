@@ -1,0 +1,80 @@
+.management-base{
+    margin-top: 60px;
+    p{
+        font: 18px/36px $font-semibold;
+         color: #082949;
+    }
+    .management-inner{
+        padding: 0 0;
+        margin-top: 75px;
+        .management-content-container{
+            padding: 0;
+            margin-bottom: 53px;
+            position: relative;
+            .profile-name{
+                background:#2065a3;
+                padding: 15px 10px;
+                margin:0;
+                color: #ffffff;
+                font:20px $font-semibold;
+                width:100%;
+                float: right;
+                text-align: center;
+        
+            }
+            h4{
+                font: 22px $font-semibold;
+                color: #082949;
+                text-transform: uppercase; 
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+            }
+            .management-profile-img{
+                padding: 0 21px;
+                min-height: 455px;
+                .management-content-container{
+                   
+                    .image-container{
+                       /* position: absolute;
+                        top: -57px;
+                        width: 100%;
+                        left: 0;*/
+                        z-index: 1;
+                        position: relative;
+                        margin-top: 40px;
+                        
+                    }
+                    .name-container{
+                        min-height: 263px;
+                        position: absolute;
+                        top: 28%;
+                        padding: 0;
+                        margin-top: 74px;
+                        width: 100%;
+                        @include box-shadow(0,11px,13px,rgba(0, 0, 0, 0.08));
+                        background: rgba(230,230,230,1);
+                        background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,230,230,1)), color-stop(100%, rgba(250,250,250,1)));
+                        background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 100%);
+                        background: -o-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 100%);
+                        background: -ms-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 100%);
+                        background: linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(250,250,250,1) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e6e6', endColorstr='#fafafa', GradientType=0 );
+                    }
+                }
+            }
+            .management-profile-content{
+                padding: 55px 15px;
+                p{
+                    font: 18px/36px $font-regular;
+                    color: $themebg;
+                    a{
+                        color: #4295c5;
+                    }
+                }
+            }
+        }
+    }
+   
+}

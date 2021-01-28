@@ -1,0 +1,140 @@
+.membership-nav{
+    a{
+        font: 16px $font-semibold;
+        cursor: initial;
+        color:#9f9f9f;
+        &:hover{
+            text-decoration: none;
+        }
+        &:focus{
+            text-decoration: none;
+        }
+    }
+    ul{
+        margin:0;
+        li{
+            padding: 10px 4%;
+            position: relative;
+            &:first-child{
+                padding-left: 0;
+                
+            }
+            &:last-child{
+                padding-right: 0;
+                &:after{
+                    background: transparent;
+                }
+            }
+            &:after{
+                background: #ccc;
+                height: 3px;
+                width: 48px;
+                position: absolute;
+                display: inline-block;
+                content: "";
+                right: -11%;
+                top: 49%;
+            }
+            
+        }
+        .active{
+            &:after{
+                background: $themebg;
+            }
+            a{
+                color: $themebg;
+                .step-icon{
+                    background: $themebg;
+                }
+            }
+        }
+    }
+}
+.membership-base{
+    padding:100px 0;
+    background-color: #f9f9f9;
+}
+.membership-cotent-base{
+    margin-top: 40px;
+}
+.upload-container{
+    padding: 0;
+    margin-top: 50px;
+    .upload-container-content{
+        img{
+            width: 200px;
+        }
+        p{
+            font: 16px $font-regular;
+            font-style: italic;
+            color: #000;;
+            margin-top: 10px;
+        }
+        float: left;
+        margin-top: 0;
+        margin-left: 38px;
+    }
+}
+
+.membership-input-base{
+ 
+    margin-top: 50px;
+} 
+.location-member-base{
+    ul{
+        margin-left: 0;
+        margin-top: 25px;
+        li{
+            margin-bottom: 25px;
+            padding-right: 24px;
+        }
+    }
+}
+
+//Membership Options
+.membership-options-base{
+    padding: 0;
+    h3{
+        font: 18px $font-semibold;
+        color: $themebg;
+    }
+    .option-ques{
+        font: 16px $font-regular;
+        color: #000000;
+    }
+    .membership-options-question{
+        padding: 0;
+    }
+    .membership-options-note{
+        padding: 0;
+        margin-top: 25px;
+        sup{
+            font-size: 15px;
+            color: #dd0000;
+        }
+        p{
+            font: 14px $font-regular;
+            color: #000;
+            border: 1px dashed #999999;
+            @include border-radius(5px);
+            padding: 13px 19px;
+        }
+    }
+    .radio-list{
+        margin:30px 0 0 ;
+        li{
+            width: 100%;
+            margin-bottom: 20px;
+            span{
+                del{
+                    font:16px $font-regular;
+                    margin-left: 15px;
+                }
+            }
+            .cost-class{
+                color: #388c1a;
+                margin-left: 15px;
+            }
+        }
+    }
+}
