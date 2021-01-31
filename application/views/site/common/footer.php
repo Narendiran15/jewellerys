@@ -1,230 +1,319 @@
-<footer>
-
-<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 footer-base">
-
-<div class="container nopadd">
-
-<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 footer-inner nopadd"> 
-
-	  <div class="col-md-5 col-sm-5 col-xs-12 col-lg-5 footer-section nopadd">
-
-			 
-
-							<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 newsletter-base ">
-
-											<h5>Subscribe</h5>
-
-											<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 newsletter-inner nopadd">
-
-													<p><?php echo $general_info->subscriber_text;?></p>
-
-															
-												<form method="post" id="newsletter_form">	
-													<input type="text" placeholder="Enter your email Id :" class="foot-input" id="newsletter_email" name="email" >
-													<input type="hidden" name="newslettersession_id" value="<?php echo $newslettersession_id;?>">
-													<button id="subscribe_btn"  class="footer-submit">Subscribe Now</button>
-													
-												</form>	
-                                                <label for="newsletter_email" generated="true" class="error"></label>
-
-											</div>
-
-							</div>
-							
-			  
-
-					
-
-	  </div>
-
-	  <div class="col-md-7 col-sm-7 col-xs-12 col-lg-7 nopadd">
-
-					<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 footer-section">
-
-									<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 sitemap-base">
-
-									<h5>Quick Links</h5>
-
-									<ul class="list-unstyled">
-
-													<li><a href="<?php echo base_url();?>">Home</a></li>
-
-													
-
-													<li><a href="<?php echo base_url("news");?>">Aavin News</a></li>
-
-													<li><a href="<?php echo base_url("contact");?>">Contact Aavin</a></li>
-
-													
-
-											</ul>
-
-									</div>
-
-					  </div>
-
-					  <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 footer-section border-none">
-
-									<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 footlogo-base">
-
-													<h5>Social Links</h5>
-													<ul class="list-inline">
-															<?php if($this->config->item('facebook_link')!=""){?>
-															<li><a target="new"  href="<?php echo $this->config->item('facebook_link')==""?"javascript:void(0)":$this->config->item('facebook_link');?>"><img src="<?php echo base_url();?>images/site/fb.png" alt="Facebook"></a></li>
-															<?php } if($this->config->item('twitter_link')!=""){?>
-															<li><a target="new"  href="<?php echo $this->config->item('twitter_link')==""?"javascript:void(0)":$this->config->item('twitter_link');?>"><img src="<?php echo base_url();?>images/site/twitter.png" alt="Twitter"></a></li>
-                                                            <?php } if($this->config->item('linkedin_link')!=""){?>
-															<li><a target="new"  href="<?php echo $this->config->item('linkedin_link')==""?"javascript:void(0)":$this->config->item('linkedin_link');?>"><img src="<?php echo base_url();?>images/site/in.png" alt="LinkedIn"></a></li>
-															 <?php } if($this->config->item('instagram_link')!=""){?>
-															<li><a target="new" href="<?php echo $this->config->item('instagram_link')==""?"javascript:void(0)":$this->config->item('instagram_link');?>"><img src="<?php echo base_url();?>images/site/insta.png" alt="Instagram"></a></li>
-															 <?php }?>	
-
-
-													</ul>
-
-													<div class="contact-foot nopadd col-md-12 col-sm-12 col-xs-12 col-lg-12">
-
-														<?php if($general_info->phone!=""){ ?>	<p>TELEPHONE  : <span><?php echo ($general_info->phone);?></span> </p>
-														<?php }?>
-														<?php if($general_info->email!=""){ ?>	<p>EMAIL : <span><a class="ahover_email" href="mailto:<?php echo ($general_info->email);?>" target="_top"><?php echo ($general_info->email);?></a></span> </p><?php }?>
-
-													</div>
-
-									</div>
-
-
-
-					  </div>
-
-	  </div>
-
-	 
-
-
-
-</div>
-
-<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 copyright-content-base text-center">
-
-	<p><?php echo $this->config->item('copy_right');?> </p>
-
-</div>
-
-</div>   
-
-</div>
-
-</footer>
-
-		<!--Modal-->
-		<div class="modal login-base-modal bs-example-modal-lg modal_base fade"  id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			<div class="modal-dialog modal-md" role="document">
-			 
-			<div class="modal-content col-md-12 col-sm-12 col-xs-12 col-lg-12">
-				<div class="modal-header col-md-12 col-sm-12 col-lg-12 col-xs-12">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title">Login</h4>
-				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center login-inner-modal">
-							<div class="login-inner">
-									<!--<div class="login_image text-left">
-											<img src="<?php echo base_url();?>images/site/sign_in.png">
-									</div>-->
-									<div class="tab-content">
-										<div role="tabpanel" class="tab-pane fade in text-left active" id="login">
-											<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 login_inputs nopadd">
-														  <form action="" method="post" id="login_form" novalidate="novalidate"> 
-															<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 app_input_base">
-																<label class="label-control">Email</label>
-																<input class="app-input-control" name="login_email" type="text">
-															</div>
-															<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 app_input_base">
-																<label class="label-control">Password</label>
-																<input class="app-input-control" name="login_password" type="password">
-															</div>
-															<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 input-base-sction">
-															
-															</div>
-															<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 app_input_base nopadd">
-																<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 add_fields_lft_divide">
-																		<div class="custom_check">
-																			<label class="control control--checkbox">
-																				<input type="checkbox" name="rem" id="remember_student" value="2" class="apply_filter amtype">
-																				Remember 
-																				<div class="control__indicator"></div>
-																			</label>
-																		</div>
-																</div>
-																<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 add_fields_rgt_divide forgot_password">
-															<a href="#" data-toggle="modal" data-dismiss="modal" data-target=".bs-example-modal-sm">Forgot Password?</a>
-																</div>
-																</div>	
-															<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 add_fields_input login_btn_base">
-																	
-																	<button  id="loginbtn_submit" data-text="Login"  data-loading-text="<i class='fa fa-spinner fa-spin '></i> Wait Processing..." class="themebtn loginbtn" type="submit"> Login</button>
-															</div>
-															
-															
-														  </form>
-														</div>
-										</div>
-										
-									</div>
-									
-							</div>
-				</div>
-					
-			</div>
-			</div>
-		</div>
-		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-		  <div class="modal-dialog modal-sm" role="document">
-		  
-			<div class="modal-content forgot_psw_base col-md-12 col-sm-12 col-lg-12 col-xs-12 nopadd ">
-				<form id="forgot-form">
-					 <div class="modal-header col-md-12 col-sm-12 col-lg-12 col-xs-12">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title"><?php echo  $this->lang->line('forgot_password'); ?></h4>
-					</div>
-					 <div class="modal-body col-md-12 col-sm-12 col-lg-12 col-xs-12">
-					<div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 forgot_modal_div">
-                                <input type="text" placeholder="email" name="email"  class="app-input-control">
-						        <label for="email" generated="true" class="error"></label>
+<footer class="footer-widget-area">
+        <div class="footer-top section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget-item">
+                            <div class="widget-title">
+                                <div class="widget-logo">
+                                    <a href="index.html">
+                                        <img src="<?php echo base_url();?>images/site/logo/logo.png" alt="brand logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="widget-body">
+                                <p>We are a team of designers and developers that create high quality wordpress, shopify, Opencart </p>
+                            </div>
+                        </div>
                     </div>
-					<div class="col-md-12 col-sm-12 col-xs-12 forgot_modal_div">
-							<input type="hidden" name="cid" value="<?php echo $newslettersession_id;?>">	
-                             <button  id="forgot_btn" data-text="Submit" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Wait Processing..." class="themebtn" type="submit"> <?php echo  $this->lang->line('submit'); ?></button>	
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget-item">
+                            <h6 class="widget-title">Contact Us</h6>
+                            <div class="widget-body">
+                                <address class="contact-block">
+                                    <ul>
+                                        <li><i class="pe-7s-home"></i> 4710-4890 Breckinridge USA</li>
+                                        <li><i class="pe-7s-mail"></i> <a href="mailto:demo@plazathemes.com">demo@yourdomain.com </a></li>
+                                        <li><i class="pe-7s-call"></i> <a href="tel:(012)800456789987">(012) 800 456 789-987</a></li>
+                                    </ul>
+                                </address>
+                            </div>
+                        </div>
                     </div>
-					</div>
-				</form>	
-			</div>
-		  </div>
-		</div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget-item">
+                            <h6 class="widget-title">Information</h6>
+                            <div class="widget-body">
+                                <ul class="info-list">
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">Delivery Information</a></li>
+                                    <li><a href="#">privet policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">contact us</a></li>
+                                    <li><a href="#">site map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget-item">
+                            <h6 class="widget-title">Follow Us</h6>
+                            <div class="widget-body social-link">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-20">
+                    <div class="col-md-6">
+                        <div class="newsletter-wrapper">
+                            <h6 class="widget-title-text">Signup for newsletter</h6>
+                            <form class="newsletter-inner" id="mc-form">
+                                <input type="email" class="news-field" id="mc-email" autocomplete="off" placeholder="Enter your email address">
+                                <button class="news-btn" id="mc-submit">Subscribe</button>
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-payment">
+                            <img src="<?php echo base_url();?>images/site/payment.png" alt="payment method">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright-text text-center">
+                            <p>Powered By <a href="#">Corano</a>. Store 1 © 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
 
-	<script type="text/javascript" src="<?php echo base_url();?>js/site/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>js/site/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>js/site/jquery.ui.touch-punch.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>js/site/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/sweetalert.min.js"></script>
-	<script src="<?php echo base_url();?>js/admin/select2.full.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/flatpickr.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/highlight.pack.js"></script>
-	<script src="<?php echo base_url();?>js/site/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/jquery.flipster.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/application.js"></script>
-    <script type="text/javascript" src="<?php echo base_url();?>js/site/site_script.js"></script>
-	<script>
-	$(document).ready(function(){
-			if(popup_error_type!="" &&popup_message!=""){ 
-				if(popup_error_type=="Error" || popup_error_type=="錯誤"){
-					var pop_type="error";
-				}
-				else{
-					var pop_type="success";
-				}
-				swal(popup_error_type,popup_message,pop_type);
-			}
-		});
-	</script>	
-  </body>
+    <!-- Quick view modal start -->
+    <div class="modal" id="quick_view">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- product details inner end -->
+                    <div class="product-details-inner">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="product-large-slider">
+                                    <div class="pro-large-img img-zoom">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img1.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-large-img img-zoom">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img2.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-large-img img-zoom">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img3.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-large-img img-zoom">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img4.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-large-img img-zoom">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img5.jpg" alt="product-details" />
+                                    </div>
+                                </div>
+                                <div class="pro-nav slick-row-10 slick-arrow-style">
+                                    <div class="pro-nav-thumb">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img1.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-nav-thumb">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img2.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-nav-thumb">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img3.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-nav-thumb">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img4.jpg" alt="product-details" />
+                                    </div>
+                                    <div class="pro-nav-thumb">
+                                        <img src="<?php echo base_url();?>images/site/product/product-details-img5.jpg" alt="product-details" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="product-details-des">
+                                    <div class="manufacturer-name">
+                                        <a href="product-details.html">HasTech</a>
+                                    </div>
+                                    <h3 class="product-name">Handmade Golden Necklace</h3>
+                                    <div class="ratings d-flex">
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <span><i class="fa fa-star-o"></i></span>
+                                        <div class="pro-review">
+                                            <span>1 Reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="price-regular">$70.00</span>
+                                        <span class="price-old"><del>$90.00</del></span>
+                                    </div>
+                                    <h5 class="offer-text"><strong>Hurry up</strong>! offer ends in:</h5>
+                                    <div class="product-countdown" data-countdown="2022/02/20"></div>
+                                    <div class="availability">
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>200 in stock</span>
+                                    </div>
+                                    <p class="pro-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod tempor invidunt ut labore et dolore magna.</p>
+                                    <div class="quantity-cart-box d-flex align-items-center">
+                                        <h6 class="option-title">qty:</h6>
+                                        <div class="quantity">
+                                            <div class="pro-qty"><input type="text" value="1"></div>
+                                        </div>
+                                        <div class="action_link">
+                                            <a class="btn btn-cart2" href="#">Add to cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="useful-links">
+                                        <a href="#" data-toggle="tooltip" title="Compare"><i
+                                            class="pe-7s-refresh-2"></i>compare</a>
+                                        <a href="#" data-toggle="tooltip" title="Wishlist"><i
+                                            class="pe-7s-like"></i>wishlist</a>
+                                    </div>
+                                    <div class="like-icon">
+                                        <a class="facebook" href="#"><i class="fa fa-facebook"></i>like</a>
+                                        <a class="twitter" href="#"><i class="fa fa-twitter"></i>tweet</a>
+                                        <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>save</a>
+                                        <a class="google" href="#"><i class="fa fa-google-plus"></i>share</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- product details inner end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quick view modal end -->
+
+    <!-- offcanvas mini cart start -->
+    <div class="offcanvas-minicart-wrapper">
+        <div class="minicart-inner">
+            <div class="offcanvas-overlay"></div>
+            <div class="minicart-inner-content">
+                <div class="minicart-close">
+                    <i class="pe-7s-close"></i>
+                </div>
+                <div class="minicart-content-box">
+                    <div class="minicart-item-wrapper">
+                        <ul>
+                            <li class="minicart-item">
+                                <div class="minicart-thumb">
+                                    <a href="product-details.html">
+                                        <img src="<?php echo base_url();?>images/site/cart/cart-1.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="minicart-content">
+                                    <h3 class="product-name">
+                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
+                                    </h3>
+                                    <p>
+                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                        <span class="cart-price">$100.00</span>
+                                    </p>
+                                </div>
+                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
+                            </li>
+                            <li class="minicart-item">
+                                <div class="minicart-thumb">
+                                    <a href="product-details.html">
+                                        <img src="<?php echo base_url();?>images/site/cart/cart-2.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="minicart-content">
+                                    <h3 class="product-name">
+                                        <a href="product-details.html">Dozen White Botanical Linen Dinner Napkins</a>
+                                    </h3>
+                                    <p>
+                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                        <span class="cart-price">$80.00</span>
+                                    </p>
+                                </div>
+                                <button class="minicart-remove"><i class="pe-7s-close"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="minicart-pricing-box">
+                        <ul>
+                            <li>
+                                <span>sub-total</span>
+                                <span><strong>$300.00</strong></span>
+                            </li>
+                            <li>
+                                <span>Eco Tax (-2.00)</span>
+                                <span><strong>$10.00</strong></span>
+                            </li>
+                            <li>
+                                <span>VAT (20%)</span>
+                                <span><strong>$60.00</strong></span>
+                            </li>
+                            <li class="total">
+                                <span>total</span>
+                                <span><strong>$370.00</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="minicart-button">
+                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> View Cart</a>
+                        <a href="cart.html"><i class="fa fa-share"></i> Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas mini cart end -->
+
+    <!-- JS
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="<?php echo base_url();?>js/site/modernizr-3.6.0.min.js"></script>
+  
+    <!-- Popper JS -->
+    <script src="<?php echo base_url();?>js/site/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="<?php echo base_url();?>js/site/bootstrap.min.js"></script>
+    <!-- slick Slider JS -->
+    <script src="<?php echo base_url();?>js/site/slick.min.js"></script>
+    <!-- Countdown JS -->
+    <script src="<?php echo base_url();?>js/site/countdown.min.js"></script>
+    <!-- Nice Select JS -->
+    <script src="<?php echo base_url();?>js/site/nice-select.min.js"></script>
+    <!-- jquery UI JS -->
+    <script src="<?php echo base_url();?>js/site/jqueryui.min.js"></script>
+    <!-- Image zoom JS -->
+    <script src="<?php echo base_url();?>js/site/image-zoom.min.js"></script>
+    <!-- Imagesloaded JS -->
+    <script src="<?php echo base_url();?>js/site/imagesloaded.pkgd.min.js"></script>
+    <!-- Instagram feed JS -->
+    <script src="<?php echo base_url();?>js/site/instagramfeed.min.js"></script>
+    <!-- mailchimp active js -->
+    <script src="<?php echo base_url();?>js/site/ajaxchimp.js"></script>
+    <!-- contact form dynamic js -->
+    <script src="<?php echo base_url();?>js/site/ajax-mail.js"></script>
+    <!-- google map api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmCVTjRI007pC1Yk2o2d_EhgkjTsFVN8"></script>
+    <!-- google map active js -->
+    <script src="<?php echo base_url();?>js/site/google-map.js"></script>
+    <!-- Main JS -->
+    <script src="<?php echo base_url();?>js/site/main.js"></script>
+</body>
 </html>

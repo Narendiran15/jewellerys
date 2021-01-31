@@ -1,3 +1,15 @@
+<?php 
+
+
+$main[] = array('GEM'=>'PEARLS','CUT'=>'2','NUMBER_OF_STONES'=>'8.0-8.5MM');
+$main[] = array('METAL'=>'AU 585/1000 WHITE 1.33g');
+$array['description'] = 'White, rose or yellow gold earrings with white freshwater pearls. These earrings are available in various sizes of pearls.';
+$array['specification'] =  $main;
+
+   echo json_encode($array);
+   die;
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -37,99 +49,457 @@
 	var popup_message="<?php echo $this->session->flashdata('alert_message');?>";		
 	var slider_timings="<?php echo ($admin_settings->row()->banner_timings=="" || $admin_settings->row()->banner_timings=="0")?6000:$admin_settings->row()->banner_timings;?>";
 </script>
-<link href="<?php echo base_url();?>css/site/bootstrap.min.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/animate.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/owl.theme.default.min.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/owl.carousel.min.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/jquery.flipster.min.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/style.css" rel="stylesheet">
-<link href="<?php echo base_url();?>css/site/developer.css" rel="stylesheet">	
-<link href="<?php echo base_url();?>css/site/sweetalert.css" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo base_url();?>css/admin/select2.min.css">
-<link rel="stylesheet" href="<?php echo base_url();?>css/site/flatpickr.min.css"/>
-<script  type="text/javascript"  src="<?php echo base_url();?>js/site/jquery-3.1.1.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>images/site/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/bootstrap.min.css">
+    <!-- Pe-icon-7-stroke CSS -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/pe-icon-7-stroke.css">
+    <!-- Font-awesome CSS -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/font-awesome.min.css">
+    <!-- Slick slider css -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/slick.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/animate.css">
+    <!-- Nice Select css -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/nice-select.css">
+    <!-- jquery UI css -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/jqueryui.min.css">
+    <!-- main style css -->
+    <link rel="stylesheet" href="<?php echo base_url();?>css/site/style.css">
+   <!-- jQuery JS -->
+   <script src="<?php echo base_url();?>js/site/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-	<header>
+	<header class="header-area header-wide bg-gray">
+        <!-- main header start -->
+        <div class="main-header d-none d-lg-block">
+            <!-- header top start -->
+            <div class="header-top bdr-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="welcome-message">
+                                <p>Welcome to Sanagem Jewellery online store</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <div class="header-top-settings">
+                                <!--ul class="nav align-items-center justify-content-end">
+                                    <li class="curreny-wrap">
+                                        $ Currency
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="dropdown-list curreny-list">
+                                            <li><a href="#">$ USD</a></li>
+                                            <li><a href="#">€ EURO</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="language">
+                                        <img src="<?php echo base_url();?>images/site/icon/en.png" alt="flag"> English
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="dropdown-list">
+                                            <li><a href="#"><img src="<?php echo base_url();?>images/site/icon/en.png" alt="flag"> english</a></li>
+                                            <li><a href="#"><img src="<?php echo base_url();?>images/site/icon/fr.png" alt="flag"> french</a></li>
+                                        </ul>
+                                    </li>
+                                </ul-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header top end -->
 
-                <div class="col-md-12 col-sm-12 co-lg-12 col-xs-12 head-base">
+            <!-- header middle area start -->
+            <div class="header-main-area sticky">
+                <div class="container">
+                    <div class="row align-items-center position-relative">
 
-                         <div class="container">
+                        <!-- start logo area -->
+                        <div class="col-lg-2">
+                            <div class="logo">
+                                <a href="index-2.html">
+                                    <img src="<?php echo base_url();?>images/site/logo/logo.png" alt="brand logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- start logo area -->
 
-					<div class="col-md-12 col-sm-12 col-xs-12 col-sm-12 header-inner">
+                        <!-- main menu area start -->
+                        <div class="col-lg-6 position-static">
+                            <div class="main-menu-area">
+                                <div class="main-menu">
+                                    <!-- main menu navbar start -->
+                                    <nav class="desktop-menu">
+                                        <ul>
+                                            <li class="active"><a href="index.html">Home</i></a>
+                                            </li>
+                                            <li class="position-static"><a href="#">Collections <i class="fa fa-angle-down"></i></a>
+                                                <ul class="megamenu dropdown">
+                                                    <li class="mega-title"><span>column 01</span>
+                                                        <ul>
+                                                            <li><a href="shop.html">shop grid left
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mega-title"><span>column 02</span>
+                                                        <ul>
+                                                            <li><a href="product-details.html">product details</a></li>
+                                                            <li><a href="product-details-affiliate.html">product
+                                                                    details
+                                                                    affiliate</a></li>
+                                                            <li><a href="product-details-variable.html">product details
+                                                                    variable</a></li>
+                                                            <li><a href="product-details-group.html">product details
+                                                                    group</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mega-title"><span>column 03</span>
+                                                        <ul>
+                                                            <li><a href="cart.html">cart</a></li>
+                                                            <li><a href="checkout.html">checkout</a></li>
+                                                            <li><a href="compare.html">compare</a></li>
+                                                            <li><a href="wishlist.html">wishlist</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="mega-title"><span>column 04</span>
+                                                        <ul>
+                                                            <li><a href="my-account.html">my-account</a></li>
+                                                            <li><a href="login-register.html">login-register</a></li>
+                                                            <li><a href="about-us.html">about us</a></li>
+                                                            <li><a href="contact-us.html">contact us</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="megamenu-banners d-none d-lg-block">
+                                                        <a href="product-details.html">
+                                                            <img src="<?php echo base_url();?>images/site/banner/img1-static-menu.jpg" alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li class="megamenu-banners d-none d-lg-block">
+                                                        <a href="product-details.html">
+                                                            <img src="<?php echo base_url();?>images/site/banner/img2-static-menu.jpg" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">shop grid layout <i class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="shop.html">shop grid left sidebar</a></li>
+                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
+                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 col</a></li>
+                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 col</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">shop list layout <i class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                            <li><a href="shop-list-full-width.html">shop list full width</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="product-details.html">product details</a></li>
+                                                            <li><a href="product-details-affiliate.html">product details affiliate</a></li>
+                                                            <li><a href="product-details-variable.html">product details variable</a></li>
+                                                            <li><a href="product-details-group.html">product details group</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="blog-left-sidebar.html">Blog <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                                                    <li><a href="blog-list-left-sidebar.html">blog list left sidebar</a></li>
+                                                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                                    <li><a href="blog-list-right-sidebar.html">blog list right sidebar</a></li>
+                                                    <li><a href="blog-grid-full-width.html">blog grid full width</a></li>
+                                                    <li><a href="blog-details.html">blog details</a></li>
+                                                    <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                                    <li><a href="blog-details-audio.html">blog details audio</a></li>
+                                                    <li><a href="blog-details-video.html">blog details video</a></li>
+                                                    <li><a href="blog-details-image.html">blog details image</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact-us.html">Contact us</a></li>
+                                        </ul>
+                                    </nav>
+                                    <!-- main menu navbar end -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- main menu area end -->
 
-																						 
+                        <!-- mini cart area start -->
+                        <div class="col-lg-4">
+                            <div class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
+                                <div class="header-search-container">
+                                </div>
+                                <div class="header-configure-area">
+                                
+                               <ul class="nav justify-content-end">
+                                        <li class="user-hover">
+                                          <a href="#">
+                                                <i class="pe-7s-user"></i>
+                                            </a>
+                                            <ul class="dropdown-list">
+                                                <li><a href="login-register.html">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                        <p class="pt-1">Narendiran</p>
+                                        </li>
+                                        <li>
+                                            <a href="wishlist.html">
+                                                <i class="pe-7s-like"></i>
+                                                <div class="notification">0</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="minicart-btn">
+                                                <i class="pe-7s-shopbag"></i>
+                                                <div class="notification">2</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mini cart area end -->
 
-									<div class="col-md-3 col-sm-3 col-xs-12 col-lg-3 logo">
+                    </div>
+                </div>
+            </div>
+            <!-- header middle area end -->
+        </div>
+        <!-- main header start -->
 
-											<a href="<?php echo base_url();?>"><img src="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_logo')!=''?$this->config->item('site_logo'):'logo.png';?>" alt="GLSN"> </a>
-											
+        <!-- mobile header start -->
+        <!-- mobile header start -->
+        <div class="mobile-header d-lg-none d-md-block sticky">
+            <!--mobile header top start -->
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="mobile-main-header">
+                            <div class="mobile-logo">
+                                <a href="index.html">
+                                    <img src="<?php echo base_url();?>images/site/logo/logo.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="mobile-menu-toggler">
+                                <div class="mini-cart-wrap">
+                                    <a href="cart.html">
+                                        <i class="pe-7s-shopbag"></i>
+                                        <div class="notification">0</div>
+                                    </a>
+                                </div>
+                                <button class="mobile-menu-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile header top start -->
+        </div>
+        <!-- mobile header end -->
+        <!-- mobile header end -->
 
-									</div>
-
-									<div class="col-md-9 col-sm-9 col-xs-12 col-lg-9 menu-base">
-
-											<nav class="navbar navbar-default">
-
-													<div class="container-fluid">
-
-													  <!-- Brand and toggle get grouped for better mobile display -->
-
-													  <div class="navbar-header">
-
-														<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-														  <span class="sr-only">Toggle navigation</span>
-
-														  <span class="icon-bar"></span>
-
-														  <span class="icon-bar"></span>
-
-														  <span class="icon-bar"></span>
-
-														</button>								   
-															<a class="navbar-brand" href="<?php echo base_url();?>" <img src="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_logo')!=''?$this->config->item('site_logo'):'logo.png';?>"></a>
-													  </div>												  
-
-													  <!-- Collect the nav links, forms, and other content for toggling -->
-
-													  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-														<ul class="nav navbar-nav navbar-right">
-														<?php 
-														$member_app=array("join","membership_register","member_reference","edit_membership_register","member_branchs","membership_option");
-														?>	
-														  <!--li <?php if($this->uri->segment(1)=="" ){ ?> class="active" <?php } ?>><a href="<?php echo base_url();?>">Home</a></li-->
-
-														 
-														 <!--li <?php if($this->uri->segment(2)=="join" || in_array($this->uri->segment(1),$member_app)){ ?> class="active" <?php } ?>><a href="<?php echo base_url("page/join");?>">Membership Application</a></li>
-
-														  <li class="<?php if($this->uri->segment(1)=="summits"){ echo "active";}?>" ><a href="<?php echo base_url("summits");?>"> Upcoming Summits  </a></li>
-
-														  <li  class="<?php if($this->uri->segment(1)=="members"){ echo "active";}?>" ><a href="<?php echo base_url("members");?>">Members Directory </a></li>
-
-														  <li class="<?php if($this->uri->segment(1)=="news"){ echo "active";}?>" ><a href="<?php echo base_url("news");?>">News </a></li>
-
-														  <li class="<?php if($this->uri->segment(1)=="contact"){ echo "active";}?>"><a href="<?php echo base_url("contact");?>"> Contact</a></li-->						  
-
-														 
-
-														</ul>
-
-													  </div><!-- /.navbar-collapse -->
-
-													</div><!-- /.container-fluid -->
-
-												  </nav>
-
-												  
-
-									</div>
-
-					</div>
-
-                         </div>
-
+        <!-- offcanvas mobile menu start -->
+        <!-- off-canvas menu start -->
+        <aside class="off-canvas-wrapper">
+            <div class="off-canvas-overlay"></div>
+            <div class="off-canvas-inner-content">
+                <div class="btn-close-off-canvas">
+                    <i class="pe-7s-close"></i>
                 </div>
 
-        </header>
+                <div class="off-canvas-inner">
+                    <!-- search box start -->
+                    <div class="search-box-offcanvas">
+                        <form>
+                            <input type="text" placeholder="Search Here...">
+                            <button class="search-btn"><i class="pe-7s-search"></i></button>
+                        </form>
+                    </div>
+                    <!-- search box end -->
+
+                    <!-- mobile menu start -->
+                    <div class="mobile-navigation">
+
+                        <!-- mobile menu navigation start -->
+                        <nav>
+                            <ul class="mobile-menu">
+                                <li class="menu-item-has-children"><a href="index.html">Home</a>
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">Home version 01</a></li>
+                                        <li><a href="index-2.html">Home version 02</a></li>
+                                        <li><a href="index-3.html">Home version 03</a></li>
+                                        <li><a href="index-4.html">Home version 04</a></li>
+                                        <li><a href="index-5.html">Home version 05</a></li>
+                                        <li><a href="index-6.html">Home version 06</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">pages</a>
+                                    <ul class="megamenu dropdown">
+                                        <li class="mega-title menu-item-has-children"><a href="#">column 01</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop.html">shop grid left
+                                                        sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                        sidebar</a></li>
+                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title menu-item-has-children"><a href="#">column 02</a>
+                                            <ul class="dropdown">
+                                                <li><a href="product-details.html">product details</a></li>
+                                                <li><a href="product-details-affiliate.html">product
+                                                        details
+                                                        affiliate</a></li>
+                                                <li><a href="product-details-variable.html">product details
+                                                        variable</a></li>
+                                                <li><a href="product-details-group.html">product details
+                                                        group</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title menu-item-has-children"><a href="#">column 03</a>
+                                            <ul class="dropdown">
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                                <li><a href="compare.html">compare</a></li>
+                                                <li><a href="wishlist.html">wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-title menu-item-has-children"><a href="#">column 04</a>
+                                            <ul class="dropdown">
+                                                <li><a href="my-account.html">my-account</a></li>
+                                                <li><a href="login-register.html">login-register</a></li>
+                                                <li><a href="about-us.html">about us</a></li>
+                                                <li><a href="contact-us.html">contact us</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children "><a href="#">shop</a>
+                                    <ul class="dropdown">
+                                        <li class="menu-item-has-children"><a href="#">shop grid layout</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop.html">shop grid left sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
+                                                <li><a href="shop-grid-full-3-col.html">shop grid full 3 col</a></li>
+                                                <li><a href="shop-grid-full-4-col.html">shop grid full 4 col</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#">shop list layout</a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
+                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                <li><a href="shop-list-full-width.html">shop list full width</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="#">products details</a>
+                                            <ul class="dropdown">
+                                                <li><a href="product-details.html">product details</a></li>
+                                                <li><a href="product-details-affiliate.html">product details affiliate</a></li>
+                                                <li><a href="product-details-variable.html">product details variable</a></li>
+                                                <li><a href="product-details-group.html">product details group</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children "><a href="#">Blog</a>
+                                    <ul class="dropdown">
+                                        <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                                        <li><a href="blog-list-left-sidebar.html">blog list left sidebar</a></li>
+                                        <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                        <li><a href="blog-list-right-sidebar.html">blog list right sidebar</a></li>
+                                        <li><a href="blog-grid-full-width.html">blog grid full width</a></li>
+                                        <li><a href="blog-details.html">blog details</a></li>
+                                        <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                        <li><a href="blog-details-audio.html">blog details audio</a></li>
+                                        <li><a href="blog-details-video.html">blog details video</a></li>
+                                        <li><a href="blog-details-image.html">blog details image</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                            </ul>
+                        </nav>
+                        <!-- mobile menu navigation end -->
+                    </div>
+                    <!-- mobile menu end -->
+
+                    <div class="mobile-settings">
+                        <ul class="nav">
+                            <li>
+                                <div class="dropdown mobile-top-dropdown">
+                                    <a href="#" class="dropdown-toggle" id="currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Currency
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="currency">
+                                        <a class="dropdown-item" href="#">$ USD</a>
+                                        <a class="dropdown-item" href="#">$ EURO</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown mobile-top-dropdown">
+                                    <a href="#" class="dropdown-toggle" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        My Account
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="myaccount">
+                                        <a class="dropdown-item" href="my-account.html">my account</a>
+                                        <a class="dropdown-item" href="login-register.html"> login</a>
+                                        <a class="dropdown-item" href="login-register.html">register</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- offcanvas widget area start -->
+                    <div class="offcanvas-widget-area">
+                        <div class="off-canvas-contact-widget">
+                            <ul>
+                                <li><i class="fa fa-mobile"></i>
+                                    <a href="#">0123456789</a>
+                                </li>
+                                <li><i class="fa fa-envelope-o"></i>
+                                    <a href="#">info@yourdomain.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="off-canvas-social-widget">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                    <!-- offcanvas widget area end -->
+                </div>
+            </div>
+        </aside>
+        <!-- off-canvas menu end -->
+        <!-- offcanvas mobile menu end -->
+    </header>
+
+   
