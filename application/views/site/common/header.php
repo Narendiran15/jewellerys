@@ -1,55 +1,50 @@
-<?php 
-
-
-$main[] = array('GEM'=>'PEARLS','CUT'=>'2','NUMBER_OF_STONES'=>'8.0-8.5MM');
-$main[] = array('METAL'=>'AU 585/1000 WHITE 1.33g');
-$array['description'] = 'White, rose or yellow gold earrings with white freshwater pearls. These earrings are available in various sizes of pearls.';
-$array['specification'] =  $main;
-
-   echo json_encode($array);
-   die;
-
-?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><?php if(isset($heading)){ echo $heading!=''?$heading.' - ':'';echo ucfirst($this->config->item('site_name'));} else { echo ucfirst($this->config->item('site_name')); }?></title>
-<link rel="alternate" href="<?php echo base_url();?>">
-<meta content="<?php echo $this->config->item('site_name');?>" name="author">
-<meta content="<?php echo $this->config->item('meta_description');?>" name="description">
-<meta content="<?php echo $this->config->item('meta_keywords');?>" name="keywords">
-<meta property="fb:app_id" content="<?php echo $this->config->item('fb_app_id');?>">
-<meta property="og:site_name" content="<?php echo ucfirst($this->config->item('site_name'));?>">
-<meta property="og:type" content="website">
-<meta property="og:url" content="<?php echo base_url();?>">
-<meta property="og:title" content="<?php echo $this->config->item('meta_title');?>">
-<meta property="og:description" content="<?php echo $this->config->item('meta_description');?>">
-<meta property="og:image" content="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_logo')!=''?$this->config->item('site_logo'):'logo.png';?>">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:widgets:csp" content="on">
-<meta name="twitter:url" content="<?php echo base_url();?>">
-<meta name="twitter:description" content="<?php echo $this->config->item('meta_description');?>">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="<?php echo $this->config->item('meta_title');?>">
-<meta name="twitter:site" content="<?php echo $this->config->item('twitter_name');?>">
-<meta name="twitter:app:id" content="<?php echo $this->config->item('twitter_app_id');?>">
-<meta name="twitter:app:name:iphone" content="<?php echo ucfirst($this->config->item('site_name'));?>">
-<meta name="twitter:app:name:ipad" content="<?php echo ucfirst($this->config->item('site_name'));?>">
-<meta name="twitter:app:name:googleplay" content="<?php echo ucfirst($this->config->item('site_name'));?>">
-<meta name="twitter:app:id:googleplay" content="<?php echo base_url();?>">
-<meta name="twitter:app:url:iphone" content="<?php echo base_url();?>">
-<meta name="twitter:app:url:ipad" content="<?php echo base_url();?>">
-<meta name="twitter:app:url:googleplay" content="<?php echo base_url();?>">
-<link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_favicon')!=''?$this->config->item('site_favicon'):'favicon.ico';?>" />    <?php echo stripcslashes($this->config->item('google_analytics'));?>
-<script>
-	var baseurl="<?php echo base_url();?>";         
-	var popup_error_type="<?php echo $this->session->flashdata('error_type')=="success"?$this->lang->line('success'):$this->lang->line('error');?>"; 
-	var popup_message="<?php echo $this->session->flashdata('alert_message');?>";		
-	var slider_timings="<?php echo ($admin_settings->row()->banner_timings=="" || $admin_settings->row()->banner_timings=="0")?6000:$admin_settings->row()->banner_timings;?>";
-</script>
-<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>images/site/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?php if(isset($heading)){ echo $heading!=''?$heading.' - ':'';echo ucfirst($this->config->item('site_name'));} else { echo ucfirst($this->config->item('site_name')); }?>
+    </title>
+    <link rel="alternate" href="<?php echo base_url();?>">
+    <meta content="<?php echo $this->config->item('site_name');?>" name="author">
+    <meta content="<?php echo $this->config->item('meta_description');?>" name="description">
+    <meta content="<?php echo $this->config->item('meta_keywords');?>" name="keywords">
+    <meta property="fb:app_id" content="<?php echo $this->config->item('fb_app_id');?>">
+    <meta property="og:site_name" content="<?php echo ucfirst($this->config->item('site_name'));?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo base_url();?>">
+    <meta property="og:title" content="<?php echo $this->config->item('meta_title');?>">
+    <meta property="og:description" content="<?php echo $this->config->item('meta_description');?>">
+    <meta property="og:image"
+        content="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_logo')!=''?$this->config->item('site_logo'):'logo.png';?>">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:widgets:csp" content="on">
+    <meta name="twitter:url" content="<?php echo base_url();?>">
+    <meta name="twitter:description" content="<?php echo $this->config->item('meta_description');?>">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<?php echo $this->config->item('meta_title');?>">
+    <meta name="twitter:site" content="<?php echo $this->config->item('twitter_name');?>">
+    <meta name="twitter:app:id" content="<?php echo $this->config->item('twitter_app_id');?>">
+    <meta name="twitter:app:name:iphone" content="<?php echo ucfirst($this->config->item('site_name'));?>">
+    <meta name="twitter:app:name:ipad" content="<?php echo ucfirst($this->config->item('site_name'));?>">
+    <meta name="twitter:app:name:googleplay" content="<?php echo ucfirst($this->config->item('site_name'));?>">
+    <meta name="twitter:app:id:googleplay" content="<?php echo base_url();?>">
+    <meta name="twitter:app:url:iphone" content="<?php echo base_url();?>">
+    <meta name="twitter:app:url:ipad" content="<?php echo base_url();?>">
+    <meta name="twitter:app:url:googleplay" content="<?php echo base_url();?>">
+    <link rel="shortcut icon" sizes="76x76" type="image/x-icon"
+        href="<?php echo base_url();?>images/site/logo/<?php echo $this->config->item('site_favicon')!=''?$this->config->item('site_favicon'):'favicon.ico';?>" />
+    <?php echo stripcslashes($this->config->item('google_analytics'));?>
+    <script>
+    var baseurl = "<?php echo base_url();?>";
+    var popup_error_type =
+        "<?php echo $this->session->flashdata('error_type')=="success"?$this->lang->line('success'):$this->lang->line('error');?>";
+    var popup_message = "<?php echo $this->session->flashdata('alert_message');?>";
+    var slider_timings =
+        "<?php echo ($admin_settings->row()->banner_timings=="" || $admin_settings->row()->banner_timings=="0")?6000:$admin_settings->row()->banner_timings;?>";
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>images/site/favicon.ico">
 
     <!-- CSS
 	============================================ -->
@@ -71,11 +66,12 @@ $array['specification'] =  $main;
     <link rel="stylesheet" href="<?php echo base_url();?>css/site/jqueryui.min.css">
     <!-- main style css -->
     <link rel="stylesheet" href="<?php echo base_url();?>css/site/style.css">
-   <!-- jQuery JS -->
-   <script src="<?php echo base_url();?>js/site/jquery-3.3.1.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="<?php echo base_url();?>js/site/jquery-3.3.1.min.js"></script>
 </head>
+
 <body>
-	<header class="header-area header-wide bg-gray">
+    <header class="header-area header-wide bg-gray">
         <!-- main header start -->
         <div class="main-header d-none d-lg-block">
             <!-- header top start -->
@@ -138,23 +134,68 @@ $array['specification'] =  $main;
                                         <ul>
                                             <li class="active"><a href="index.html">Home</i></a>
                                             </li>
-                                            <li class="position-static"><a href="#">Collections <i class="fa fa-angle-down"></i></a>
+                                            <li class="position-static"><a href="#">Collections <i
+                                                        class="fa fa-angle-down"></i></a>
                                                 <ul class="megamenu dropdown">
-                                                    <li class="mega-title"><span>column 01</span>
+                                                    <?php for($i=0; $i<= 3; $i++ ){ ?>
+                                                    <li class="mega-title">
+                                                        <span><?php echo strtoupper($cat[$i]->cname); ?></span>
                                                         <ul>
-                                                            <li><a href="shop.html">shop grid left
-                                                                    sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
-                                                                    sidebar</a></li>
-                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                            <?php $result =  get_all_subcat_menus($cat[$i]->id);
+                                                        for($j=0; $j<= 3; $j++ ) { ?>
+                                                            <li>
+                                                                <a href="shop.html">
+                                                                    <?php echo ucwords($result[$j]->sub_cat_name);?>
+                                                                </a>
+                                                            </li>
+                                                            <?php } ?>
                                                         </ul>
                                                     </li>
-                                                    <li class="mega-title"><span>column 02</span>
-                                                        <ul>
+                                                    <?php } ?>
+                                                    <li class="megamenu-banners d-none d-lg-block">
+                                                        <a href="product-details.html">
+                                                            <img src="<?php echo base_url();?>images/site/banner/img1-static-menu.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </li>
+                                                    <li class="megamenu-banners d-none d-lg-block">
+                                                        <a href="product-details.html">
+                                                            <img src="<?php echo base_url();?>images/site/banner/img2-static-menu.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">shop grid layout <i
+                                                                class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="shop.html">shop grid left sidebar</a></li>
+                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3
+                                                                    col</a></li>
+                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4
+                                                                    col</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">shop list layout <i
+                                                                class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
+                                                            <li><a href="shop-list-left-sidebar.html">shop list left
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-list-right-sidebar.html">shop list right
+                                                                    sidebar</a></li>
+                                                            <li><a href="shop-list-full-width.html">shop list full
+                                                                    width</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">products details <i
+                                                                class="fa fa-angle-right"></i></a>
+                                                        <ul class="dropdown">
                                                             <li><a href="product-details.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product
-                                                                    details
+                                                            <li><a href="product-details-affiliate.html">product details
                                                                     affiliate</a></li>
                                                             <li><a href="product-details-variable.html">product details
                                                                     variable</a></li>
@@ -162,70 +203,22 @@ $array['specification'] =  $main;
                                                                     group</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="mega-title"><span>column 03</span>
-                                                        <ul>
-                                                            <li><a href="cart.html">cart</a></li>
-                                                            <li><a href="checkout.html">checkout</a></li>
-                                                            <li><a href="compare.html">compare</a></li>
-                                                            <li><a href="wishlist.html">wishlist</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="mega-title"><span>column 04</span>
-                                                        <ul>
-                                                            <li><a href="my-account.html">my-account</a></li>
-                                                            <li><a href="login-register.html">login-register</a></li>
-                                                            <li><a href="about-us.html">about us</a></li>
-                                                            <li><a href="contact-us.html">contact us</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="megamenu-banners d-none d-lg-block">
-                                                        <a href="product-details.html">
-                                                            <img src="<?php echo base_url();?>images/site/banner/img1-static-menu.jpg" alt="">
-                                                        </a>
-                                                    </li>
-                                                    <li class="megamenu-banners d-none d-lg-block">
-                                                        <a href="product-details.html">
-                                                            <img src="<?php echo base_url();?>images/site/banner/img2-static-menu.jpg" alt="">
-                                                        </a>
-                                                    </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">shop grid layout <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 col</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 col</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">shop list layout <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
-                                                            <li><a href="shop-list-full-width.html">shop list full width</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="product-details.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details affiliate</a></li>
-                                                            <li><a href="product-details-variable.html">product details variable</a></li>
-                                                            <li><a href="product-details-group.html">product details group</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog-left-sidebar.html">Blog <i class="fa fa-angle-down"></i></a>
+                                            <li><a href="blog-left-sidebar.html">Blog <i
+                                                        class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown">
                                                     <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
-                                                    <li><a href="blog-list-left-sidebar.html">blog list left sidebar</a></li>
+                                                    <li><a href="blog-list-left-sidebar.html">blog list left sidebar</a>
+                                                    </li>
                                                     <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                                    <li><a href="blog-list-right-sidebar.html">blog list right sidebar</a></li>
-                                                    <li><a href="blog-grid-full-width.html">blog grid full width</a></li>
+                                                    <li><a href="blog-list-right-sidebar.html">blog list right
+                                                            sidebar</a></li>
+                                                    <li><a href="blog-grid-full-width.html">blog grid full width</a>
+                                                    </li>
                                                     <li><a href="blog-details.html">blog details</a></li>
-                                                    <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                                    <li><a href="blog-details-left-sidebar.html">blog details left
+                                                            sidebar</a></li>
                                                     <li><a href="blog-details-audio.html">blog details audio</a></li>
                                                     <li><a href="blog-details-video.html">blog details video</a></li>
                                                     <li><a href="blog-details-image.html">blog details image</a></li>
@@ -242,14 +235,15 @@ $array['specification'] =  $main;
 
                         <!-- mini cart area start -->
                         <div class="col-lg-4">
-                            <div class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
+                            <div
+                                class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
                                 <div class="header-search-container">
                                 </div>
                                 <div class="header-configure-area">
-                                
-                               <ul class="nav justify-content-end">
+
+                                    <ul class="nav justify-content-end">
                                         <li class="user-hover">
-                                          <a href="#">
+                                            <a href="#">
                                                 <i class="pe-7s-user"></i>
                                             </a>
                                             <ul class="dropdown-list">
@@ -257,7 +251,7 @@ $array['specification'] =  $main;
                                             </ul>
                                         </li>
                                         <li>
-                                        <p class="pt-1">Narendiran</p>
+                                            <p class="pt-1">Narendiran</p>
                                         </li>
                                         <li>
                                             <a href="wishlist.html">
@@ -362,8 +356,10 @@ $array['specification'] =  $main;
                                                         sidebar</a></li>
                                                 <li><a href="shop-grid-right-sidebar.html">shop grid right
                                                         sidebar</a></li>
-                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a>
+                                                </li>
+                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li class="mega-title menu-item-has-children"><a href="#">column 02</a>
@@ -401,23 +397,28 @@ $array['specification'] =  $main;
                                         <li class="menu-item-has-children"><a href="#">shop grid layout</a>
                                             <ul class="dropdown">
                                                 <li><a href="shop.html">shop grid left sidebar</a></li>
-                                                <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
+                                                <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a>
+                                                </li>
                                                 <li><a href="shop-grid-full-3-col.html">shop grid full 3 col</a></li>
                                                 <li><a href="shop-grid-full-4-col.html">shop grid full 4 col</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">shop list layout</a>
                                             <ul class="dropdown">
-                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                                <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a>
+                                                </li>
+                                                <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a>
+                                                </li>
                                                 <li><a href="shop-list-full-width.html">shop list full width</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children"><a href="#">products details</a>
                                             <ul class="dropdown">
                                                 <li><a href="product-details.html">product details</a></li>
-                                                <li><a href="product-details-affiliate.html">product details affiliate</a></li>
-                                                <li><a href="product-details-variable.html">product details variable</a></li>
+                                                <li><a href="product-details-affiliate.html">product details
+                                                        affiliate</a></li>
+                                                <li><a href="product-details-variable.html">product details variable</a>
+                                                </li>
                                                 <li><a href="product-details-group.html">product details group</a></li>
                                             </ul>
                                         </li>
@@ -448,7 +449,8 @@ $array['specification'] =  $main;
                         <ul class="nav">
                             <li>
                                 <div class="dropdown mobile-top-dropdown">
-                                    <a href="#" class="dropdown-toggle" id="currency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="dropdown-toggle" id="currency" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
                                         Currency
                                         <i class="fa fa-angle-down"></i>
                                     </a>
@@ -460,7 +462,8 @@ $array['specification'] =  $main;
                             </li>
                             <li>
                                 <div class="dropdown mobile-top-dropdown">
-                                    <a href="#" class="dropdown-toggle" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#" class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
                                         My Account
                                         <i class="fa fa-angle-down"></i>
                                     </a>
@@ -501,5 +504,3 @@ $array['specification'] =  $main;
         <!-- off-canvas menu end -->
         <!-- offcanvas mobile menu end -->
     </header>
-
-   

@@ -56,19 +56,31 @@ defined('FOPEN_READ_WRITE_CREATE_STRICT')       or define('FOPEN_READ_WRITE_CREA
 |--------------------------------------------------------------------------
 |
 */
+
+
+
+
+
 define('ADMIN_PATH',                        'admin');
 define('TBL_PREF',                        'fc_');
 define('ADMIN',                        TBL_PREF . 'admin');
+/* jewellery*/
+define('CATEGORY',                        TBL_PREF . 'nt_category');
+define('SUBCATEGORY',                        TBL_PREF . 'nt_subcategory');
+define('PRODUCTMANAGEMENT',                        TBL_PREF . 'nt_product_management');
+
+/* end jewellery*/
+
+
 define('COMPANY',                    TBL_PREF . 'company');
 define('OFFICE',                    TBL_PREF . 'office');
 define('IATA',                        TBL_PREF . 'iata');
-define('USERS',                        TBL_PREF . 'users');
+define('USERS',                        TBL_PREF . 'nt_users');
 define('ADMIN_SETTINGS',            TBL_PREF . 'admin_settings');
 define('CMS',                        TBL_PREF . 'cms');
 define('EMAIL',                        TBL_PREF . 'email');
 define('CONTACTUS',                    TBL_PREF . 'contactus');
 define('FILESUPLOADS',                TBL_PREF . 'fileuploads');
-define('CATEGORY',                    TBL_PREF . 'category');
 define('NEWSLETTER',                TBL_PREF . 'newsletter');
 define('BANNER',                    TBL_PREF . 'banner');
 define('NEWS',                        TBL_PREF . 'news');

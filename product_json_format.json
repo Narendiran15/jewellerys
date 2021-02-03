@@ -1,13 +1,19 @@
 {
-    "description": "White, rose or yellow gold earrings with white freshwater pearls. These earrings are available in various sizes of pearls.",
+    "description": "Solitaire earrings with push back clips decorated with diamonds held by six prongs. These earrings are available in white gold, rose gold and yellow gold.",
     "specification": [
         {
-            "GEM": "PEARLS",
-            "CUT": "2",
-            "NUMBER_OF_STONES": "8.0-8.5MM"
+            "GEM": "DIAMONDS",
+            "CUT": "BRILLIANT",
+            "NUMBER_OF_STONES": "2",
+            "TOTAL_CARAT_WEIGHT": "0.20ct"
         },
         {
-            "METAL": "AU 585\/1000 WHITE 1.33g"
+            "METAL": "AU 585/1000 WHITE 0.80g"
         }
     ]
 }
+
+
+
+
+

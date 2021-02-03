@@ -55,41 +55,8 @@ $route['pay'] = 'site/landing/pay';
 $route['verify'] = 'site/landing/verify';
 $route['default_controller'] = 'site/landing/index';
 $route['logout'] = 'site/landing/logout';
-$route['dashboard'] = 'site/landing/dashboard';
+$route['product_details/(:any)'] = 'site/landing/product_details/$1';
 
-$route['member_reference/(:any)'] = 'site/landing/member_reference/$1';
-$route['edit_membership_register/(:any)'] = 'site/landing/edit_membership_register/$1';
-$route['view_application'] = 'site/landing/view_application/';
-$route['get_application_form'] = 'site/landing/get_application_form/';
-
-$route['member_branchs/(:any)'] = 'site/landing/member_branchs/$1';
-$route['update_branch/(:any)'] = 'site/landing/update_branch/$1';
-$route['membership_option/(:any)'] = 'site/landing/membership_option/$1';
-$route['edit_members'] = 'site/landing/edit_members';
-$route['edit_profile'] = 'site/landing/edit_profile';
-$route['delete_office/(:any)'] = 'site/landing/delete_office/$1';
-$route['edit_delete_office/(:any)'] = 'site/landing/edit_delete_office/$1';
-$route['password_change/(:num)'] = 'site/landing/password_change/$1';
-$route['change_password'] = 'site/landing/change_password';
-$route['export_company'] = 'site/landing/export_company';
-$route['members_news_list'] = 'site/landing/members_news_list';
-$route['member_news/(:any)/(:num)'] = 'site/landing/member_news/$1/$2';
-$route['industry_news/(:any)/(:num)'] = 'site/landing/industry_news/$1/$2';
-$route['referrals'] = 'site/landing/referrals';
-$route['news'] = 'site/landing/news';
-$route['members'] = 'site/landing/member_directory';
-$route['summits'] = 'site/landing/upcomming_summits';
-$route['contact'] = 'site/landing/contact';
-$route['page/(:any)'] = 'site/cms/page/$1';
-$route['services/(:any)'] = 'site/cms/services/$1';
-$route['company/(:any)/(:num)'] = 'site/landing/company/$1/$2';
-$route['reference_link/(:num)/(:any)'] = 'site/landing/reference_link/$1/$2';
-
-
-$route['invoice/(:num)'] = 'site/student/invoice/$1';
-
-
-//admin
 $route['admin'] = 'admin/admin_settings/login';
 $route['admin/dashboard'] = 'admin/admin_settings/dashboard';
 

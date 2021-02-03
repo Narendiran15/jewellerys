@@ -50,8 +50,8 @@ class MY_Controller extends CI_Controller {
 		}
 		#$this->data['logo']=base_url()."images/hobbysvglogo.jpg"; 	
 		 if($this->checkLogin('U')!=''){
-			$this->data['company_details'] = $this->db->query('select * from '.COMPANY.' where `id`="'.$this->checkLogin('U').'"');
-			$uid=$this->checkLogin('U');
+			//$this->data['company_details'] = $this->db->query('select * from '.COMPANY.' where `id`="'.$this->checkLogin('U').'"');
+			//$uid=$this->checkLogin('U');
 			
 			
 		}
@@ -65,20 +65,13 @@ class MY_Controller extends CI_Controller {
 		 $this->data['newslettersession_id']=$newslettersession_id=session_id();		
 		 $this->session->set_userdata(array("newslettersession_id"=>$newslettersession_id));
 				
-					
-		
-		
-			
-		   
-		
-        
 		$this->data['cms_row1']=$this->landing_model->get_all_details(CMS,array('status'=>'Active','footer_order'=>'row1','footer_menu_status'=>"1"));
-		//$this->data['cms_row2']=$this->landing_model->get_all_details(CMS,array('status'=>'Active','footer_order'=>'services','footer_menu_status'=>"1"));
-		//$this->data['cms_row3']=$this->landing_model->get_all_details(CMS,array('status'=>'Active','footer_order'=>'row3'));
+		$this->data['cms_row2']=$this->landing_model->get_all_details(CMS,array('status'=>'Active','footer_order'=>'services','footer_menu_status'=>"1"));
+		$this->data['cms_row3']=$this->landing_model->get_all_details(CMS,array('status'=>'Active','footer_order'=>'row3'));
 		$this->data['country_list']=$this->landing_model->get_all_details(COUNTRY,array(),array("field"=>'name','type'=>'asc'));
 		$this->data['admin_settings']=$this->landing_model->get_all_details(ADMIN_SETTINGS,array('id'=>'1'));
 		$this->data['general_info']=$this->landing_model->get_all_details(FOOTER,array('id'=>1))->row();
-		$this->data['admin_currency_symbol']="$";
+    $this->data['admin_currency_symbol']="$";
 		
 		
 		 $this->data['lang_key']=$this->session->userdata('pictuslang_key');
@@ -115,13 +108,13 @@ class MY_Controller extends CI_Controller {
     	}else if ($type == 'P'){
     		return $this->session->userdata('gm_session_prev');
     	}else if ($type == 'U'){
-			$user_check = $this->landing_model->get_all_details(USERS,array('company_id'=>$this->session->userdata('glsn_comp_id')));
+		/*	$user_check = $this->landing_model->get_all_details(USERS,array('company_id'=>$this->session->userdata('glsn_comp_id')));
 			if($user_check->num_rows() > 0){
     		return $this->session->userdata('glsn_comp_id');
 			}
 			else
 				$this->session->unset_userdata('glsn_comp_id');
-    	}else if ($type == 'T'){
+    	*/}else if ($type == 'T'){
     		return $this->session->userdata('fc_session_temp_id');
 			
     	}

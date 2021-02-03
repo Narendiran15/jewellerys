@@ -7,7 +7,60 @@ class Landing_model extends My_Model
 	{
 		parent::__construct();
 	}
-	
+	 /* JEWELLERY MODELS */
+	 
+	function get_collection_menu(){
+		
+		$this->db->select('c.*,sc.*');
+		$this->db->from(CATEGORY.' as c');
+		$this->db->join(SUBCATEGORY.' as sc','c.id=sc.cid');
+		$this->db->where('c.status','Active');
+		$this->db->where('sc.status','Active');
+		$this->db->order_by('c.id','asc');
+		return $query = $this->db->get();
+		
+	}
+	function get_our_products_cat_list(){
+		$this->db->select('c.*');
+		$this->db->from(PRODUCTMANAGEMENT.' as p');
+		$this->db->join(CATEGORY.' as c','p.cid=c.id');
+		$this->db->where('p.our_products_status','Active');
+		$this->db->where('p.status','Active');
+		$this->db->where('c.status','Active');
+		$this->db->order_by('c.id','asc');
+		$this->db->group_by('p.cid');
+		return $query = $this->db->get();
+	}
+	function get_featured_products_list(){
+		
+		$this->db->select('p.*,c.*');
+		$this->db->from(PRODUCTMANAGEMENT.' as p');
+		$this->db->join(SUBCATEGORY.' as c','p.sub_cid=c.id');
+		$this->db->where('p.featured_products_status','Active');
+		$this->db->where('p.status','Active');
+		$this->db->where('c.status','Active');
+		$this->db->order_by('c.id','asc');
+		return $query = $this->db->get();
+	}
+	function get_products_details($id){
+
+		$this->db->select('p.*,c.cname,sc.sub_cat_name');
+		$this->db->from(PRODUCTMANAGEMENT.' as p');
+		$this->db->join(SUBCATEGORY.' as sc','p.sub_cid = sc.id');
+		$this->db->join(CATEGORY.' as c','c.id = p.cid');
+		$this->db->where('p.id',$id);
+		$this->db->where('p.status','Active');
+		$this->db->where('c.status','Active');
+		$this->db->order_by('c.id','asc');
+		return $query = $this->db->get();
+	}
+	 /* END JEWELLERY MODELS */
+
+
+
+
+
+
 	function get_export_column()
 	{
 		
