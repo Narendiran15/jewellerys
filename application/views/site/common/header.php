@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,7 +119,7 @@
                         <!-- start logo area -->
                         <div class="col-lg-2">
                             <div class="logo">
-                                <a href="index-2.html">
+                                <a href="<?php echo base_url(); ?>">
                                     <img src="<?php echo base_url();?>images/site/logo/logo.png" alt="brand logo">
                                 </a>
                             </div>
@@ -126,7 +127,7 @@
                         <!-- start logo area -->
 
                         <!-- main menu area start -->
-                        <div class="col-lg-6 position-static">
+                        <div class="col-lg-7 position-static">
                             <div class="main-menu-area">
                                 <div class="main-menu">
                                     <!-- main menu navbar start -->
@@ -134,7 +135,9 @@
                                         <ul>
                                             <li class="active"><a href="index.html">Home</i></a>
                                             </li>
-                                            <li class="position-static"><a href="#">Collections <i
+                                            <li class="active"><a href="index.html">Exclusives</i></a>
+                                            </li>
+                                            <li class="position-static"><a href="#">Top Collections <i
                                                         class="fa fa-angle-down"></i></a>
                                                 <ul class="megamenu dropdown">
                                                     <?php for($i=0; $i<= 3; $i++ ){ ?>
@@ -166,64 +169,8 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">shop grid layout <i
-                                                                class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right
-                                                                    sidebar</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3
-                                                                    col</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4
-                                                                    col</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">shop list layout <i
-                                                                class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop-list-left-sidebar.html">shop list left
-                                                                    sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">shop list right
-                                                                    sidebar</a></li>
-                                                            <li><a href="shop-list-full-width.html">shop list full
-                                                                    width</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">products details <i
-                                                                class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="product-details.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details
-                                                                    affiliate</a></li>
-                                                            <li><a href="product-details-variable.html">product details
-                                                                    variable</a></li>
-                                                            <li><a href="product-details-group.html">product details
-                                                                    group</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog-left-sidebar.html">Blog <i
-                                                        class="fa fa-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
-                                                    <li><a href="blog-list-left-sidebar.html">blog list left sidebar</a>
-                                                    </li>
-                                                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
-                                                    <li><a href="blog-list-right-sidebar.html">blog list right
-                                                            sidebar</a></li>
-                                                    <li><a href="blog-grid-full-width.html">blog grid full width</a>
-                                                    </li>
-                                                    <li><a href="blog-details.html">blog details</a></li>
-                                                    <li><a href="blog-details-left-sidebar.html">blog details left
-                                                            sidebar</a></li>
-                                                    <li><a href="blog-details-audio.html">blog details audio</a></li>
-                                                    <li><a href="blog-details-video.html">blog details video</a></li>
-                                                    <li><a href="blog-details-image.html">blog details image</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="contact-us.html">Finished Jewelry</a></li>
+                                            <li><a href="contact-us.html">Gems & Stones</a></li>
                                             <li><a href="contact-us.html">Contact us</a></li>
                                         </ul>
                                     </nav>
@@ -234,7 +181,7 @@
                         <!-- main menu area end -->
 
                         <!-- mini cart area start -->
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <div
                                 class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
                                 <div class="header-search-container">

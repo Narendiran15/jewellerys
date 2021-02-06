@@ -56,6 +56,7 @@ $route['verify'] = 'site/landing/verify';
 $route['default_controller'] = 'site/landing/index';
 $route['logout'] = 'site/landing/logout';
 $route['product_details/(:any)'] = 'site/landing/product_details/$1';
+$route['product_list'] = 'site/landing/product_list';
 
 $route['admin'] = 'admin/admin_settings/login';
 $route['admin/dashboard'] = 'admin/admin_settings/dashboard';

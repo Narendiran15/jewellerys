@@ -160,7 +160,7 @@
                                     <?php foreach($product as $products): ?>
                                     <div class="product-item">
                                         <figure class="product-thumb">
-                                            <a href="product-details.html">
+                                            <a href="<?php echo base_url();?>product_details/<?php echo $products->id;?>">
                                                 <img class="pri-img"
                                                     src="<?php echo base_url();?>images/site/product/product-1.jpg"
                                                     alt="product">

@@ -8,6 +8,12 @@
             "TOTAL_CARAT_WEIGHT": "0.20ct"
         },
         {
+            "GEM": "DIAMONDS",
+            "CUT": "BRILLIANT",
+            "NUMBER_OF_STONES": "2",
+            "TOTAL_CARAT_WEIGHT": "0.20ct"
+        },
+        {
             "METAL": "AU 585/1000 WHITE 0.80g"
         }
     ]

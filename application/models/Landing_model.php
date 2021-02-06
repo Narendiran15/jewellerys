@@ -54,6 +54,18 @@ class Landing_model extends My_Model
 		$this->db->order_by('c.id','asc');
 		return $query = $this->db->get();
 	}
+	function get_procucts_list(){
+
+		$this->db->select('p.*,c.cname,sc.sub_cat_name');
+		$this->db->from(PRODUCTMANAGEMENT.' as p');
+		$this->db->join(SUBCATEGORY.' as sc','p.sub_cid = sc.id');
+		$this->db->join(CATEGORY.' as c','c.id = p.cid');
+		$this->db->where('p.status','Active');
+		$this->db->where('c.status','Active');
+		$this->db->order_by('c.id','asc');
+		return $query = $this->db->get();
+	}
+	
 	 /* END JEWELLERY MODELS */
 
 
